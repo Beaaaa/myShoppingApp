@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_checkout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    tools:context=".CheckOut">
+
+    <ListView
+        android:id="@+id/checkout_list"
+        android:layout_width="wrap_content"
+        android:layout_height="323dp" />
+
+    <TextView
+        android:id="@+id/totalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkout_list"
+        android:layout_toStartOf="@+id/tvTotal"
+        android:textSize="20sp"
+        android:text="Total: "/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/totalText"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/tvNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvTotal"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="Next"/>
+</RelativeLayout>

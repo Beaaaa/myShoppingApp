@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shipping_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    tools:context=".ShippingDetail">
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Shipping Details"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/receiverTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mainTitle"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="Receiver: "/>
+
+    <EditText
+        android:id="@+id/tvReceiver"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/receiverTitle"
+        android:layout_alignBottom="@id/receiverTitle"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:imeOptions="actionSend"/>
+
+    <TextView
+        android:id="@+id/addressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/receiverTitle"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="Address: "/>
+
+    <EditText
+        android:id="@+id/tvAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/addressTitle"
+        android:layout_alignBottom="@id/addressTitle"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:imeOptions="actionSend"/>
+
+    <TextView
+        android:id="@+id/errorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/costTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/addressTitle"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="Shipping Cost:  $10"/>
+
+    <TextView
+        android:id="@+id/totalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvTotal"
+        android:layout_toStartOf="@id/tvTotal"
+        android:textSize="20sp"
+        android:text="Total Cost:  "/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/costTitle"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/tvConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvTotal"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="Confirm"/>
+</RelativeLayout>
