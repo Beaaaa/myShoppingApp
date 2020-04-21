@@ -1,0 +1,3 @@
+# myShoppingApp
+
+Android, java, SQLite
