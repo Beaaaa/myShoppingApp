@@ -2,4 +2,4 @@
 
 Android App - java, SQLite
 
-<div align="center">![](Demo.gif)</div>
+<center>![](Demo.gif)</center>
